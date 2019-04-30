@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "gsap": "^2.1.2",
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
