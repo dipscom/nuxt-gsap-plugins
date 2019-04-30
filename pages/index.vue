@@ -26,11 +26,43 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+/*
+  Note that Nuxt currently does not support ES modules,
+  so we need to use GSAP's UMD version of the library
+*/
+import TweenMax from 'gsap/umd/TweenMax'
+import Draggable from 'gsap/umd/Draggable'
+/*
+  If you have access the bonus plugins
+  place a copy of ThrowPropsPlugin
+  from the bonus-files-for-npm-users/umd
+  in the assets/vendor/folder then uncomment
+  the require bellow
+*/
+if (process.client) {
+  /*
+    One must 'require' a module here instead of
+    importing because 'import' statements can only
+    exist at the top level of the file
+  */
+  // require('~/assets/vendor/ThrowPropsPlugin')
+}
+
 
 export default {
   components: {
     Logo
-  }
+  },
+
+  mounted() {
+    Draggable.create(
+      ".VueToNuxtLogo",
+      {
+        // throwProps:true,
+      }
+    );
+  },
+
 }
 </script>
 
