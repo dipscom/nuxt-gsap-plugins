@@ -15,7 +15,20 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    /*
+      If you do not have any particular reason to bundle
+      GSAP in your project, you can easily add links to the
+      various CDNs and enjoy all the benefits it brings
+    */
+    // script: [
+    //   {
+    //     src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'
+    //   },
+    //   {
+    //     src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/utils/Draggable.min.js'
+    //   },
+    // ]
   },
 
   /*
