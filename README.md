@@ -1,6 +1,6 @@
 # nuxt-gsap-plugins
 
-> A skeleton repo to help begginers setup GSAP&#39;s plugins in Nuxt
+> A skeleton repo to help beginners setup GSAP&#39;s plugins in Nuxt
 
 ## Build Setup
 

@@ -6,7 +6,7 @@
         nuxt-gsap-plugins
       </h1>
       <h2 class="subtitle">
-        A skeleton repo to help begginers setup GSAP&#39;s plugins in Nuxt
+        A skeleton repo to help beginners setup GSAP&#39;s plugins in Nuxt
       </h2>
       <div class="links">
         <a
