@@ -33,20 +33,13 @@ import Logo from '~/components/Logo.vue'
 import TweenMax from 'gsap/umd/TweenMax'
 import Draggable from 'gsap/umd/Draggable'
 /*
-  If you have access the bonus plugins
-  place a copy of ThrowPropsPlugin
-  from the bonus-files-for-npm-users/umd
-  in the assets/vendor/folder then uncomment
-  the require bellow
+If you have access the bonus plugins
+place a copy of ThrowPropsPlugin
+from the bonus-files-for-npm-users/umd
+in the assets/vendor/folder then uncomment
+the require bellow
 */
-if (process.client) {
-  /*
-    One must 'require' a module here instead of
-    importing because 'import' statements can only
-    exist at the top level of the file
-  */
-  // require('~/assets/vendor/ThrowPropsPlugin')
-}
+// import ThrowPropsPlugin from '~/assets/vendor/ThrowPropsPlugin'
 
 
 export default {
