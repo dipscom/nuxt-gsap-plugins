@@ -49,6 +49,13 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
+    },
+    /*
+      If you do not want to use the UMD version of GSAP,
+      you'll have to tell Babel to transpile the library and its plugins
+      from ES modules.
+      Bellow is how you would configure it.
+    */
+    // transpile: ['TweenMax', 'Draggable', 'ThrowPropsPlugin'],
   }
 }
