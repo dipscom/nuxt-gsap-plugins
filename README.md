@@ -83,3 +83,14 @@ Once in possession of said plugin, create a `assets/vendor` folder and copy it t
   import Draggable from 'gsap/umd/Draggable'
   import ThrowPropsPlugin from '~/assets/vendor/ThrowPropsPlugin'
 ```
+
+#### A Note on using GSAP's ES6 modules
+
+If, for whatever reason, you still think you should use GSAP&#39;s ES6 modules version, all that is required is to [transpile it during the build stage](https://nuxtjs.org/guide/plugins/#es6-plugins).
+
+``` javascript
+  build: {
+    transpile: ['TweenMax', 'TimelineMax']
+  }
+}
+```
