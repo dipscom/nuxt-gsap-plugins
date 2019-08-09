@@ -28,6 +28,16 @@ export default {
     //   {
     //     src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/utils/Draggable.min.js'
     //   },
+    //   // Member-only plugin that exists in the ./static folder (NOT present in this repository)
+    //   {
+    //     src: '/ThrowPropsPlugin.min.js'
+    //   },
+    //   {
+    //     src: '/GSDevTools.min.js'
+    //   },
+    //   {
+    //     src: '/SplitText.min.js'
+    //   },
     // ]
   },
 
@@ -69,6 +79,6 @@ export default {
       from ES modules.
       Bellow is how you would configure it.
     */
-    // transpile: ['TweenMax', 'Draggable', 'ThrowPropsPlugin'],
+    // transpile: ['TweenMax', 'Draggable', 'ThrowPropsPlugin', GSDevTools],
   }
 }

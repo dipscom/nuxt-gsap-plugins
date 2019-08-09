@@ -6,8 +6,9 @@
         nuxt-gsap-plugins
       </h1>
       <h2 class="subtitle">
-        A skeleton repo to help beginners setup GSAP&#39;s plugins in Nuxt
+        A skeleton repo to help setup GSAP&#39;s plugins in Nuxt
       </h2>
+      <h3>Drag the logo</h3>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -27,20 +28,31 @@
 <script>
 import Logo from '~/components/Logo.vue'
 /*
-  Note that Nuxt currently does not support ES modules,
-  so we need to use GSAP's UMD version of the library
-*/
+ * Note that Nuxt currently does not support ES modules,
+ * so we need to use GSAP's UMD version of the library
+ */
 import TweenMax from 'gsap/umd/TweenMax'
 import Draggable from 'gsap/umd/Draggable'
 /*
-If you have access the bonus plugins
-place a copy of ThrowPropsPlugin
-from the bonus-files-for-npm-users/umd
-in the assets/vendor/folder then uncomment
-the require bellow
-*/
+ * If you have access the bonus plugins
+ * place a copy of ThrowPropsPlugin
+ * from the bonus-files-for-npm-users/umd
+ * in the assets/vendor/folder then uncomment
+ * the require bellow
+ */
 // import ThrowPropsPlugin from '~/assets/vendor/ThrowPropsPlugin'
-
+/**
+ * Here is the gotcha.
+ * This does will not compile in a SSR setting
+ * 
+ * import GSDevTools from '~/assets/vendor/GSDevTools'
+ * 
+ * But the bellow will
+ */
+if(process.client) {
+  // const GSDevTools = require('~/assets/vendor/GSDevTools')
+  // const SplitText = require('~/assets/vendor/SplitText')
+}
 
 export default {
   components: {
@@ -48,12 +60,24 @@ export default {
   },
 
   mounted() {
+    // If you have access to GSDevTools plugin, you can test this
+    // GSDevTools.create();
+
     Draggable.create(
       ".VueToNuxtLogo",
       {
+        // If you have access to the ThrowProps plugin, you can test this
         // throwProps:true,
       }
     );
+
+    // If you have access to the SplitText plugin, you can test this
+    // const split = new SplitText('.subtitle');
+    // TweenMax.staggerTo(split.words, 1, { yPercent: -100, repeat: -1, yoyo: true, ease: Power4.easeInOut }, 0.1);
+
+    TweenMax.to('h1', 0.5, { autoAlpha: 0.5, repeat: -1, yoyo: true, ease: Power1.easeInOut });
+    TweenMax.to('.links > *', 1, { yPercent: 100, repeat: -1, yoyo: true, ease: Power2.easeInOut });
+
   },
 
 }
