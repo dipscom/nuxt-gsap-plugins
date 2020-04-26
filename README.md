@@ -1,3 +1,5 @@
+> This was written for GSAP V2.
+
 # GSAP & Plugins in Nuxt
 
 > A skeleton repo to help setup GSAP&#39;s plugins in Nuxt
