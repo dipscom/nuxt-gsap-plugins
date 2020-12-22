@@ -8,6 +8,11 @@
 </template>
 
 <script>
+/*
+* Uncomment if bundling GSAP with your project
+*/
+// import { gsap } from 'gsap'
+
 export default {
   mounted: function () {
     gsap.to('h1', {

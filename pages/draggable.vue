@@ -9,9 +9,18 @@
 </template>
 
 <script>
+/*
+* Uncomment if bundling GSAP with your project
+*/
+// import { gsap } from 'gsap'
+// import { Draggable } from 'gsap/Draggable.js'
+
 export default {
   mounted: function () {
-    gsap.registerPlugin(Draggable)
+    /*
+    * Uncomment if bundling GSAP with your project
+    */
+    // gsap.registerPlugin(Draggable)
 
     Draggable.create('.draggable')
   }
