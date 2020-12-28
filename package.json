@@ -1,21 +1,18 @@
 {
   "name": "nuxt-gsap-plugins",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A skeleton repo to help begginers setup GSAP&#39;s plugins in Nuxt",
   "author": "Pedro Tavares",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
-    "cross-env": "^6.0.3",
-    "gsap": "^3.0.4",
-    "nuxt": "^2.10.2"
+    "gsap": "^3.5.1",
+    "nuxt": "^2.14.12"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+  "devDependencies": {}
 }
