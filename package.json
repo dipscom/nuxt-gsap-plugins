@@ -11,7 +11,7 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "gsap": "^3.5.1",
+    "gsap": "^3.6.0",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {}
