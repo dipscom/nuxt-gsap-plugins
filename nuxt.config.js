@@ -9,10 +9,10 @@ export default {
     */
     script: [
       {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js'
       },
       {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js'
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.min.js'
       }
     ]
   },
